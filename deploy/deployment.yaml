@@ -31,4 +31,3 @@ spec:
         - name: random-statsd-client
           image: quay.io/nmalik/random-statsd-client:latest
           imagePullPolicy: Always
-
