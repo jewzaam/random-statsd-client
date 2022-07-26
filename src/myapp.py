@@ -12,7 +12,7 @@ c = statsd.StatsClient(server, port)
 
 while True:
     r = random.randint(0,1000)
-    print("setting 'random' to: {}".format(r), file=sys.stdout)
+    print("setting 'random' to: {}".format(r), file=sys.stdout, flush=True)
     c.gauge('random', r)
     time.sleep(sleep_s)
 
